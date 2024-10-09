@@ -3,10 +3,18 @@
   grid-template-columns: 255px 1fr;
   padding-right: 57px;
   
+  @include media-breakpoint-down(xxl) {
+    padding-right: 30px;
+  }
+  
   &__main {
     padding: 38px 44px 38px 50px;
     border-radius: 30px;
     background: #F6F6F6;
+    
+    @include media-breakpoint-down(xxl) {
+      padding: 25px 30px;
+    }
   }
 
   &__main-inner {
@@ -14,6 +22,11 @@
     padding: 52px 0;
     border-radius: 28px;
     background: #FFF;
+    
+    @include media-breakpoint-down(xxl) {
+      min-height: 360px;
+      padding: 35px 0;
+    }
   }
 
   &__number-verification-form {

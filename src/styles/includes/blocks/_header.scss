@@ -4,6 +4,10 @@
   align-items: center;
   padding: 25px 80px 35px 21px;
   
+  @include media-breakpoint-down(xxl) {
+    padding-right: 60px;
+  }
+  
   &__right {
     display: grid;
     grid-template-columns: repeat(2, auto);

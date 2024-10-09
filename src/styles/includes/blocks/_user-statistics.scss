@@ -2,4 +2,8 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: 74px;
+  
+  @include media-breakpoint-down(xxl) {
+    gap: 40px;
+  }
 }

@@ -10,6 +10,10 @@
   font-size: 15px;
   color: #000;
   
+  @include media-breakpoint-down(xxl) {
+    height: 54px;
+  }
+  
   &::placeholder {
     color: #676E8B;
   }
