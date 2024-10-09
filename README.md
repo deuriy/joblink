@@ -1,4 +1,4 @@
-# Balance app builder and development server
+# Joblink app builder and development server
 
 ## How to setup development environment
 
