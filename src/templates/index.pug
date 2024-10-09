@@ -1,5 +1,9 @@
 extends layouts/base
 
 block content
-  .container
-    
+  form.number-verification-form.user-profile__number-verification-form
+    h1.page-title.number-verification-form__title Перевірка номера
+    .number-verification-form__text Перевірте номер та отримайте за нього винагороду!
+    .number-verification-form__fields
+      input(type="tel" name="tel" placeholder="Введіть номер для перевірки...").form-text.number-verification-form__input
+      button(type="submit").btn.number-verification-form__submit-btn Перевірити

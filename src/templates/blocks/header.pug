@@ -1,1 +1,19 @@
-//- header.header
+header.header
+  .header__left
+    a(href="/").logo
+      img(src="/img/logo.jpg" alt="Joblink").logo__img
+  .header__right
+    .user-info
+      img(src="/img/avatar_batman.svg" alt="").user-avatar
+      .username.user-info__username Привіт, Ілля
+      a(href="/logout").user-info__logout-link (вийти)
+    .user-statistics
+      .statistics-item
+        span.ico.ico--call
+        | Верифіковано: 217
+      .statistics-item
+        span.ico.ico--coin-dollar
+        | Зароблено: 2170 UAH
+      .statistics-item
+        span.ico.ico--hand-dollar
+        | Виплачено: 2100 UAH

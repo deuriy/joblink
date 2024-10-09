@@ -1,3 +1,14 @@
 .header {
+  display: grid;
+  grid-template-columns: 255px 1fr;
+  align-items: center;
+  padding: 25px 80px 35px 21px;
   
+  &__right {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
 }

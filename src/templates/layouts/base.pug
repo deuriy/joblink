@@ -15,7 +15,11 @@ html(lang="ru", data-bs-theme=`${bsTheme || "light"}`)
     .wrapper
       include ../blocks/header.pug
 
-      main.main(class=`${mainExtraClass || ""}`)
-        block content
+      main.user-profile(class=`${userProfileExtraClass || ""}`)
+        include ../blocks/user-sidebar
+
+        .user-profile__main
+          .user-profile__main-inner
+            block content
 
       include ../blocks/footer.pug

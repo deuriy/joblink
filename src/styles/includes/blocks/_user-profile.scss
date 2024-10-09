@@ -1,0 +1,22 @@
+.user-profile {
+  display: grid;
+  grid-template-columns: 255px 1fr;
+  padding-right: 57px;
+  
+  &__main {
+    padding: 38px 44px 38px 50px;
+    border-radius: 30px;
+    background: #F6F6F6;
+  }
+
+  &__main-inner {
+    min-height: 410px;
+    padding: 52px 0;
+    border-radius: 28px;
+    background: #FFF;
+  }
+
+  &__number-verification-form {
+    margin: 0 auto;
+  }
+}

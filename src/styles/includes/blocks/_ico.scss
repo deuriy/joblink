@@ -2,8 +2,8 @@
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   border: 0;
   background: none;
   color: inherit;
@@ -13,9 +13,32 @@
     content: "";
     width: 100%;
     height: 100%;
-    mask-size: contain;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background: currentcolor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--call {
+    &::before {
+      background-image: url("../img/icons/call.svg");
+    }
+  }
+
+  &--coin-dollar {
+    &::before {
+      background-image: url("../img/icons/coin-dollar.svg");
+    }
+  }
+
+  &--hand-dollar {
+    &::before {
+      background-image: url("../img/icons/hand-dollar.svg");
+    }
+  }
+
+  &--money {
+    &::before {
+      background-image: url("../img/icons/money.svg");
+    }
   }
 }

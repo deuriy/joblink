@@ -1,0 +1,14 @@
+.user-info {
+  display: flex;
+  align-items: center;
+  
+  &__username {
+    margin-left: 24px;
+  }
+
+  &__logout-link {
+    margin-left: 10px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, .3);
+  }
+}

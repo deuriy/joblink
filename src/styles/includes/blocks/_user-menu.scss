@@ -1,0 +1,29 @@
+.user-menu {
+  &__list {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  &__item {
+    border-radius: 8px;
+    // font-weight: 600;
+    font-weight: 700;
+    font-size: 17px;
+    
+    & + .user-menu__item {
+      margin-top: 8px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 12px 16px;
+    border-radius: 10px;
+    @extend .transition;
+    
+    &:hover {
+      background: #F6F6F6;
+    }
+  }
+}
