@@ -1,0 +1,27 @@
+.info-message {
+  width: 750px;
+  max-width: 100%;
+  text-align: center;
+  
+  @include media-breakpoint-down(xxl) {
+    width: 500px;
+  }
+  
+  &__icon-wrapper {
+    width: 128px;
+    margin: 0 auto 57px;
+    
+    @include media-breakpoint-down(xxl) {
+      width: 90px;
+      margin: 0 auto 40px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 39px;
+    
+    @include media-breakpoint-down(xxl) {
+      margin-bottom: 30px;
+    }
+  }
+}

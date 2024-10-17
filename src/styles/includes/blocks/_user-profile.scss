@@ -32,4 +32,12 @@
   &__number-verification-form {
     margin: 0 auto;
   }
+
+  &__info-message {
+    margin: 36px auto 88px;
+    
+    @include media-breakpoint-down(xxl) {
+      margin: 24px auto 60px;
+    }
+  }
 }
