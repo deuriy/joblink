@@ -11,7 +11,7 @@
     }
   }
   
-  &__text {
+  &__description {
     margin-bottom: 79px;
     
     @include media-breakpoint-down(xxl) {
@@ -21,7 +21,27 @@
 
   &__fields {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 222px;
     gap: 8px;
+    
+    @include media-breakpoint-down(xxl) {
+      grid-template-columns: 1fr 150px;
+    }
+  }
+
+  &__get-reward {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 13px;
+    padding: 0 9px;
+    font-size: 15px;
+    
+    &--error {
+      grid-template-columns: 100%;
+      justify-content: center;
+    }
   }
 }

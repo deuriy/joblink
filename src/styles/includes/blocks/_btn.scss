@@ -2,7 +2,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1.484em 4.25em;
+  // padding: 1.484em 4.25em;
+  padding: 0.817em 1.9465em;
   border: none;
   border-radius: 7px;
   background: #5340ff;
@@ -17,5 +18,9 @@
   
   &:hover {
     opacity: 0.85;
+  }
+
+  &--success {
+    background: #009D2B;
   }
 }

@@ -3,7 +3,12 @@ extends layouts/base
 block content
   form.number-verification-form.user-profile__number-verification-form
     h1.page-title.number-verification-form__title Перевірка номера
-    .description.number-verification-form__text Перевірте номер та отримайте за нього винагороду!
+    .description.number-verification-form__description Перевірте номер та отримайте за нього винагороду!
     .number-verification-form__fields
       input(type="tel" name="tel" placeholder="Введіть номер для перевірки...").form-text.number-verification-form__input
       button(type="submit").btn.number-verification-form__submit-btn Перевірити
+    .number-verification-form__get-reward
+      .success Номер знайдено!
+      a(href="#").btn.btn--success Отримати винагороду!
+    .number-verification-form__get-reward.number-verification-form__get-reward--error
+      .error Такого номера не існує або він уже закріплений за іншим користувачем.
